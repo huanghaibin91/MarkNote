@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/list/list",
+    "pages/edit/edit",
+    "pages/preview/preview",
+    "pages/aboutme/aboutme",
+    "pages/md/md",
+    "pages/applets/applets"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "MarkNote",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3CC51F",
+    "borderStyle": "black",
+    "backgroundColor": "#252a34",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home-fill.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/aboutme/aboutme",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/my-fill.png",
+        "text": "我"
+      }
+    ]
+  }
+}

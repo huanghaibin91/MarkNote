@@ -1,0 +1,16 @@
+<!-- 关于小程序 -->
+<view class='aboutme-page'>
+  <view class='user'>
+    <image class='user-avatar' src='{{ userInfo.avatarUrl }}'></image>
+    <text class='user-name'>{{ userInfo.nickName }}</text>
+  </view>
+  <view class='aboutme-list'> 
+    <button hover-class='hover-button' bindtap='goMd'>简单Makdown语法</button>
+    <button hover-class='hover-button' bindtap='goApplets'>关于Mark笔记</button>
+  </view>
+  <view class='footer'>
+    https://huanghaibin91.github.io
+  </view>
+</view>
+
+

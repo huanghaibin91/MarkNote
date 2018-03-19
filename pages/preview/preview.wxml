@@ -1,0 +1,4 @@
+<!-- 预览页 -->
+<view class='preview-box'>
+  <rich-text class='md-body' nodes='{{ htmlStr }}'></rich-text>
+</view>

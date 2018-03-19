@@ -1,0 +1,39 @@
+<!-- 列表页 -->
+<view class='list-head'>
+  <view class='list-icon-box'>
+    <image class='icon' src='../../image/list.png'></image>
+  </view>
+  <view class='add-icon-box' bindtap='addNewMd'>
+    <image class='icon' src='../../image/add.png'></image>
+  </view>
+</view>
+<view class='list-item-box'>
+  <block wx:for='{{ mdList }}' wx:key='item.date'>
+    <view class='file-list-item'>
+      <view class='list-item-name' data-key='{{ item.date }}' bindtap='openMd'>
+        {{ item.name }}
+      </view>
+      <view class='list-item-action' data-key='{{ item.date }}' bindtap='moreAction'>
+        <image class='icon' src='../../image/more.png'></image>
+      </view>
+    </view>
+  </block>
+</view>
+
+<!-- 首屏加载 -->
+<view class='load-box' wx:if='{{loadFlag}}'>
+  <view class='load-title'>
+    <image class='load-img' src="../../image/m-logo.png"></image>
+    <text class='load-text'>MarkNote</text>
+  </view>
+</view>
+
+<!-- 文件重命名 -->
+<view class='md-rename-box' wx:if='{{ renameFlag }}' catchtap='renameCancel'>
+  <view class='md-rename' catchtap='stopPropagation'>
+    <text class='rename-title'>文件重命名</text>
+    <input value='{{ newName }}' bindinput='inputMdName'></input>
+    <button class='confirm-btn' hover-class='hover-confirm' catchtap='renameConfirm'>确认</button>
+    <button class='cancel-btn' hover-class='hover-cancel' catchtap='renameCancel'>取消</button>
+  </view>
+</view>

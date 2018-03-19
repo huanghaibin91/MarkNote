@@ -1,0 +1,10 @@
+<!--pages/applets/applets.wxml-->
+<view class="md-head">
+  <view class="head-title">Mark笔记</view>
+  <view class="head-line"></view>
+  <view class="head-desc">
+    <view class='desc-text'>MarkNote是我学习微信小程序开发做的第一个完整项目，肯定有我没有发现的问题，如果您在使用时遇到问题，你可以找找看能不能联系我~~~</view>
+    <view class='desc-text'>现在MarkNote仅支持微信存储，我计划以后添加将文档下载到本地的功能。这样可以让编辑的文档在除微信以外的地方使用，敬请期待。</view>
+  </view>
+</view>
+

@@ -1,0 +1,41 @@
+/* pages/md/md.wxss */
+.md-head {
+  padding: 60rpx 50rpx 80rpx;
+  text-align: center;
+}
+
+.head-title {
+  display: inline-block;
+  padding: 0 40rpx 20rpx 40rpx;
+  font-size: 32rpx;
+  color: #BEBEBE;
+}
+
+.head-line {
+  margin: 0 auto;
+  width: 150rpx;
+  height: 2rpx;
+  background-color: #D8D8D8;
+}
+
+.head-desc {
+  padding-top: 20rpx;
+  color: #9B9B9B;
+  font-size: 32rpx;
+}
+
+.md-example {
+  margin: 10px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.md-item-title {
+  font-weight: bold;
+  padding: 1em;
+  background-color: #eee;
+}
+
+.md-item {
+  padding: 1em;
+} 

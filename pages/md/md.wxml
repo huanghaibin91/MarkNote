@@ -1,0 +1,15 @@
+<!--pages/md/md.wxml-->
+<view class="md-head">
+  <view class="head-title">Markdown</view>
+  <view class="head-line"></view>
+  <view class="head-desc">
+    Markdown是一种语法简单的标记语言，通过简单的符号标记，可以使普通文本内容具有一定的格式，易于阅读且拥有一定的美观性。
+  </view>
+</view>
+<view class='md-example'>
+  <view class='md-item-title'>Markdown的一些常用语法</view>
+  <view class='md-item' wx:for='{{ mdArr }}' wx:key='index'>{{ item }}</view>
+</view>
+<view class='foooter'>
+
+</view>

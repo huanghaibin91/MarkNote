@@ -1,0 +1,301 @@
+/* pages/preview/preview.wxss */
+.preview-box {
+  margin: 10px;
+  padding: 1em;
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+/* 预览的markdown样式 */
+.md-body {
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.md-body::before {
+  display: table;
+  content: "";
+}
+
+.md-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.md-a {
+  color: #0366d6;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.md-strong {
+  font-weight: bolder;
+}
+
+.md-img {
+  border-style: none;
+}
+
+.md-code,
+.md-pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.md-hr {
+  box-sizing: content-box;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.md-hr::before {
+  display: table;
+  content: "";
+}
+
+.md-hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.md-input {
+  font: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  overflow: visible;
+}
+
+.md-table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.md-td,
+.md-th {
+  padding: 0;
+}
+
+.md-h1,
+.md-h2,
+.md-h3,
+.md-h4,
+.md-h5,
+.md-h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.md-h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0.67em 0;
+}
+
+.md-h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.md-h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.md-h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.md-h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.md-h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.md-p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.md-blockquote {
+  margin: 0;
+}
+
+.md-ul,
+.md-ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.md-dd {
+  margin-left: 0;
+}
+
+.md-code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.md-pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.md-p,
+.md-blockquote,
+.md-ul,
+.md-ol,
+.md-dl,
+.md-table,
+.md-pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.md-hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+.md-blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+
+.md-h1,
+.md-h2,
+.md-h3,
+.md-h4,
+.md-h5,
+.md-h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.md-h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.md-h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.md-h3 {
+  font-size: 1.25em;
+}
+
+.md-h4 {
+  font-size: 1em;
+}
+
+.md-h5 {
+  font-size: 0.875em;
+}
+
+.md-h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+
+.md-ul,
+.md-ol {
+  padding-left: 2em;
+}
+
+.md-li {
+  word-wrap: break-all;
+}
+
+.md-dl {
+  padding: 0;
+}
+
+.md-dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.md-dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.md-table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.md-th {
+  font-weight: 600;
+}
+
+.md-th,
+.md-td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.md-tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.md-img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.md-pre {
+  word-wrap: normal;
+  white-space: pre;
+  background-color: #f6f8fa;
+  padding: 1em;
+  overflow-x: scroll;
+}
+
+ .md-code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  background-color: rgba(27, 31, 35, 0.05); 
+  border: 0;
+} 
+
+.md-hr {
+  border-bottom-color: #eee;
+}

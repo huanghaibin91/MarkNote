@@ -1,0 +1,22 @@
+<!-- 编辑页 -->
+<view class='edit-head'>
+  <view class='file-name-box'>
+    <text>{{ md.name }}</text>
+  </view>
+  <view class='preview-icon-box' bindtap='moreAction'>
+    <image class='icon' src='../../image/more-edit.png'></image>
+  </view>
+</view>
+<view class='textarea-box'> 
+   <textarea value='{{ md.content }}' maxlength='-1' auto-height bindinput='inputMdContent'></textarea> 
+</view>  
+
+<!-- 弹出输入框 -->
+<view class='md-save-box' wx:if='{{ saveFlag }}' catchtap='saveCancel'>
+  <view class='md-save' catchtap='stopPropagation'>
+    <text class='save-title'>保存文件</text>
+    <input value='{{ newName }}' bindinput='inputMdName'></input>
+    <button class='confirm-btn' hover-class='hover-confirm' catchtap='saveConfirm'>确认</button>
+    <button class='cancel-btn' hover-class='hover-cancel' catchtap='saveCancel'>取消</button>
+  </view>
+</view>
